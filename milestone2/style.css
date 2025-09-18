@@ -1,0 +1,95 @@
+h3 {
+    font-family: "fantasy", Copperplate;
+    font-size: 1.5rem;
+    text-align: center;
+    background-image: url('https://www.onlygfx.com/wp-content/uploads/2017/08/scribble-rectangle-2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 45px 20px;
+    color: #222;
+    border: none;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+p {
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+body {
+    text-align: center;
+    line-height: 2;
+    background-color: rgb(116, 152, 165);
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.background {
+    background-color: rgba(146, 188, 204, 0.524);
+    padding: 35px;
+    border-radius: 0px;
+}
+
+
+#contact-box{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    table {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        line-height: 1.4;
+    }
+
+    nav, iframe, img {
+        display: none; 
+    }
+
+    p, h1, h3, ul, li {
+        margin-left: 0;
+        margin-right: 0;
+        color: black;
+    }
+
+    table {
+        border: 1px solid black;
+        width: 100%;
+    }
+}
+
+
+
