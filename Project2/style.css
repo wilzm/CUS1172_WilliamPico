@@ -1,0 +1,33 @@
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#taskForm input,
+#taskForm select {
+    margin-bottom: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: red;
+}
+
+.low-priority{
+    border-left: 5px solid green;
+}
+
+.medium-priority {
+  border-left: 5px solid #ffc107;
+}
+
+.high-priority {
+  border-left: 5px solid #dc3545;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.1s ease-in-out;
+}
