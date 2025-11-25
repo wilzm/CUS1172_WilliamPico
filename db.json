@@ -1,0 +1,112 @@
+{
+  "burgers": [
+    {
+      "id": "classic-beef",
+      "title": "Classic Beef Burger",
+      "subtitle": "A timeless favorite",
+      "stepIds": [
+        "classic-beef-step1",
+        "classic-beef-step2",
+        "classic-beef-step3",
+        "classic-beef-step4",
+        "classic-beef-step5"
+      ]
+    },
+    {
+      "id": "grilled-chicken",
+      "title": "Grilled Chicken Burger",
+      "subtitle": "Light and tasty",
+      "stepIds": [
+        "grilled-chicken-step1",
+        "grilled-chicken-step2",
+        "grilled-chicken-step3",
+        "grilled-chicken-step4",
+        "grilled-chicken-step5"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "classic-beef-step1",
+      "type": "multiple-choice",
+      "instruction": "Choose your bun",
+      "options": ["Sesame", "Brioche", "Lettuce Wrap"]
+    },
+    {
+      "id": "classic-beef-step2",
+      "type": "multiple-choice",
+      "instruction": "Choose protein",
+      "options": ["Single Patty", "Double Patty", "Plant-based"]
+    },
+    {
+      "id": "classic-beef-step3",
+      "type": "text",
+      "instruction": "How many sauce servings? (enter a number)",
+      "placeholder": "e.g. 1",
+      "feedback": {
+        "when": {
+          "classic-beef-step3": "4"
+        },
+        "message": "Too much sauce might overpower the flavor!"
+      }
+    },
+    {
+      "id": "classic-beef-step4",
+      "type": "image-selection",
+      "instruction": "Choose your burger presentation",
+      "imageOptions": [
+        { "url": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=400&q=60" },
+        { "url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=60" },
+        { "url": "https://images.unsplash.com/photo-1541542684-136a3b5a9ad5?auto=format&fit=crop&w=400&q=60" }
+      ]
+    },
+    {
+      "id": "classic-beef-step5",
+      "type": "multiple-choice",
+      "instruction": "Add extras",
+      "options": ["Cheese", "Bacon", "No extras"],
+      "feedback": {
+        "when": {
+          "classic-beef-step1": "Lettuce Wrap",
+          "classic-beef-step5": "Bacon"
+        },
+        "message": "Bacon on a lettuce wrap may not hold well — are you sure?"
+      }
+    },
+
+    {
+      "id": "grilled-chicken-step1",
+      "type": "multiple-choice",
+      "instruction": "Choose your bun",
+      "options": ["Sesame", "Whole Grain", "Lettuce Wrap"]
+    },
+    {
+      "id": "grilled-chicken-step2",
+      "type": "multiple-choice",
+      "instruction": "Choose protein style",
+      "options": ["Grilled", "Crispy", "Spicy"]
+    },
+    {
+      "id": "grilled-chicken-step3",
+      "type": "text",
+      "instruction": "How spicy? (0-5)",
+      "placeholder": "enter 0-5"
+    },
+    {
+      "id": "grilled-chicken-step4",
+      "type": "image-selection",
+      "instruction": "Pick a plating style",
+      "imageOptions": [
+        { "url": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=400&q=60" },
+        { "url": "https://images.unsplash.com/photo-1542444459-db4b7b53a3b0?auto=format&fit=crop&w=400&q=60" },
+        { "url": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=400&q=60" }
+      ]
+    },
+    {
+      "id": "grilled-chicken-step5",
+      "type": "multiple-choice",
+      "instruction": "Add extras",
+      "options": ["Avocado", "Pepper Jack", "No extras"]
+    }
+  ]
+}
